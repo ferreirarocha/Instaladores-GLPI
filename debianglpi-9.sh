@@ -113,9 +113,15 @@ update-rc.d mysql   defaults
 systemctl  restart apache2 || /etc/init.d/apache2 restart
 /etc/init.d/mysql start
 
-cd  /var/www/html/glpi
 
 ## Criando Banco de Dados GLPI
 mysql -u root -e "create database glpi character set utf8";
 mysql -u root -e "create user 'glpi'@'localhost' identified by '$1'";
 mysql -u root -e "grant all on glpi.* to 'glpi'@'localhost'  with grant option";
+
+
+php  /var/www/html/glpi/scripts/cliinstall.php \
+--db=glpi \
+--lang=pt_BR \
+--user=glpi \
+--pass=$1 
