@@ -108,10 +108,12 @@ a2enconf glpi.conf \
 a2enconf glpi.conf
 a2enconf glpi
 a2ensite glpi.conf
-sudo update-rc.d apache2 defaults
-sudo update-rc.d mysql   defaults
+update-rc.d apache2 defaults
+update-rc.d mysql   defaults
 systemctl  restart apache2 || /etc/init.d/apache2 restart
 /etc/init.d/mysql start
+
+cd  /var/www/html/glpi
 
 ## Criando Banco de Dados GLPI
 mysql -u root -e "create database glpi character set utf8";
