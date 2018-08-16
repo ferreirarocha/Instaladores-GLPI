@@ -2,6 +2,8 @@
 # Script para instalar a versão de produção (.tgz) e  desenvolvimeno (.zip) do GLPI
 # LABEL maintainer="marcos.fr.rocha@gmail.com"
 # telegram:ferreirarocha
+# teste de  commit
+#3fd
 while getopts ":a:b:d:l:p:u:" opt; do
   case $opt in
     l) url="$OPTARG"
