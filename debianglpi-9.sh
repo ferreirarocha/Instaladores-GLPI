@@ -23,7 +23,6 @@ while getopts ":a:b:d:l:p:u:" opt; do
   esac
 done
 
-
 	## Variáveis
 	APACHE_LOG_DIR=/var/log/apache2
 	downloadglpi="$url"
