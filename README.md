@@ -2,9 +2,12 @@
 
 Esse repositório contem instaladores para o GLPI
 
-Este script baixa  instata as Dependêcias e  realiza a configuração inicial do GLPI, usando o script nativo chamado GLPi Command Line Tools
+Este script baixa  instala as Dependêcias e  realiza a configuração inicial do GLPI, usando o script nativo chamado GLPi Command Line Tools
 
-`wget http://bit.ly/debian9glpi`
+```
+wget http://bit.ly/debian9glpi
+
+```
 
 Abaixo é possível executar o script informando os parâmetros.
 
