@@ -28,7 +28,7 @@ done
 	downloadglpi="$url"
 	versao=$(echo $downloadglpi | cut -d"/" -f9 )
 	dir=/var/www/html/$dir
-	mkdir $dir
+	mkdir -p $dir
 
 	export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive
 	echo "America/Sao_Paulo" > /etc/timezone
