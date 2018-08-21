@@ -4,7 +4,7 @@
 # telegram:ferreirarocha
 # teste de  commit
 # 3fd
-# RR
+# RRr
 while getopts ":a:b:d:l:p:u:" opt; do
   case $opt in
     l) url="$OPTARG"
